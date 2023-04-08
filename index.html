@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive website with Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: rgb(193, 37, 37);
+    /* overflow-x: hidden; */
+  }
+
+  .heading1 {
+    text-shadow: 3px 1px 3px white;
+  }
+
+  .img2 {
+
+    box-shadow: 3px 3px 6px white;
+  }
+
+  .services {
+    background-color: #ffffff;
+  }
+
+  .div2 {
+    background-color: rgb(37, 150, 190);
+    box-shadow: -4px -3px 4px black;
+  }
+
+
+</style>
+
+<body>
+
+  <!-- header section  -->
+
+  <header class="container-fluid p-0 m-0 overflow-hidden">
+    <section id="top" class="bg-black">
+      <div class="top container">
+        <div class="row py-2">
+          <div class="col-12 col-lg-6">
+            <p class="text-light m-0"><b>Email: contact@gmail.com</b></p>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-end">
+            <p class="text-light m-0"><b>Phone: +923368251372</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
+      <div class="container ">
+        <a class="navbar-brand" href="/">
+          <img src="./images/1000_F_315536525_geYD5M72iOjY7uyt40ZK4TbJv09iYui5.jpg" class="mb-1" width="20px" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link px-3 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#contact">Contact</a>
+            </li>
+
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#service" role="button" aria-expanded="false">
+                Services
+              </a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="https://www.facebook.com/syedzaday.syedibad" class="me-2"><img src="./images/facebook.png"
+                alt="facebook logo" width="30px"></a>
+            <a href="https://www.instagram.com/_syed.ibad3727/?fbclid=IwAR0jipfuC5Z3FhXjuAJ6zOVE9y_-hF5iz0kzI4Decj8aQh_Ayo4DCjMJ8WI"
+              class="me-2"><img src="./images/instagram.png" alt="instagram logo" width="30px"></a>
+
+
+            <a href="https://www.linkedin.com/in/syed-ibad-542205261/"><img src="./images/linkedin.png"
+                alt="linkedin logo" width="30px" class="me-2"></a>
+            <a href="https://github.com/SyedIbad123"><img src="./images/github.png" alt="facebook logo" width="30px"
+                class="me-2"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slidebar -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner2.png" class="d-block w-100" style="height: 450px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner4.jpg" class="d-block w-100" style="height: 450px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/banner3.jpg" class="d-block w-100" style="height: 450px;" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- about section -->
+
+  <section id="about" class="container-fluid ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5 py-4 px-1 col-md-8 ">
+          <img data-aos="zoom-in " data-aos-duration="1500" src="./images/about.jpg"
+            class="w-10 rounded img2 border border-light image-fluid mt-3 ms-1 position-relative start-0 " width="350px"
+            height="300px" alt="about us">
+        </div>
+        <div class="col-12 col-lg-7 py-4 px-2 ">
+
+          <h1 class="text-light-tertiary display-6 heading1 overflow-hidden"><b>About Us</b></h1>
+          <p class="text-light"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, praesentium?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis dicta omnis aliquid facilis.
+            Reprehenderit enim ea atque </p>
+          <p class="text-light">
+            quia corrupti odio fugiat expedita, nobis voluptate! Enim eius doloribus a quia sit illum iusto praesentium
+            vel nesciunt. Velit libero ab repudiandae, distinctio iusto eveniet, vitae eligendi temporibus totam dolore
+            error, nisi harum.
+          </p>
+          <h2 class="text-light display-6 text-decoration-underline overflow-hidden"><b>Follow Us</b></h2>
+          <div class="my-4">
+            <a href="https://www.facebook.com/syedzaday.syedibad"><img src="./images/facebook.png" alt="facebook logo"
+                width="30px " class="me-2"></a> &nbsp; &nbsp;
+            <a
+              href="https://www.instagram.com/_syed.ibad3727/?fbclid=IwAR0jipfuC5Z3FhXjuAJ6zOVE9y_-hF5iz0kzI4Decj8aQh_Ayo4DCjMJ8WI"><img
+                src="./images/instagram.png" alt="facebook logo" width="30px" class="me-2"></a> &nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/syed-ibad-542205261/"><img src="./images/linkedin.png"
+                alt="facebook logo" width="30px" class="me-2"></a>&nbsp;&nbsp;
+            <a href="https://github.com/SyedIbad123"><img src="./images/github.png" alt="facebook logo" width="30px"
+                class="me-2"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- services section -->
+
+  <section id="service" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="display-6 overflow-hidden">
+            <b>Our Services</b>
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quasi!</p>
+          <img src="./images/star (1).png" width="25px" alt="">
+          <img src="./images/star (1).png" width="25px" alt="">
+          <img src="./images/star (1).png" width="25px" alt="">
+          <img src="./images/star (1).png" width="25px" alt="">
+          <img src="./images/star (1).png" width="25px" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-center py-5 d-flex align-items-stretch">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-left" data-aos-duration="1500"
+            class="border p-3 text-center my-3 div2 rounded overflow-hidden">
+            <img class="img-fluid" src="./images/web-design.png" style="height: 195px;" alt="">
+            <h5 class="py-3 text-light">Web Designing</h5>
+            <p><b>ipsum dolor sit amet Lorem ipsum dolor sit.</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+              a quote</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 ">
+          <div data-aos="flip-right" data-aos-duration="1500" class="border p-3 text-center my-3 div2 rounded">
+            <img class="img-fluid py-3" src="./images/web_development.jpg" style="height: 215px;" alt="">
+            <h5 class="py-3 text-light">Web Development</h5>
+            <p><b>ipsum dolor sit amet consect</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+              a quote</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-left" data-aos-duration="1500" class="border p-3 text-center my-3 div2 rounded">
+            <img class="img-fluid" src="./images/Web-analytics.png" style="height: 220px;" alt="">
+            <h5 class="py-3 text-light">Web Analytics</h5>
+            <p><b>ipsum dolor sit amet consectetur </b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+              a quote</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-right" data-aos-duration="1500" class="border p-2 text-center my-3 div2 rounded">
+            <img class="img-fluid" src="./images/B5441374-E3D9-4644-9FD1-21566E6EF40F.jpeg" style="height: 225px;"
+              alt="">
+            <h5 class="py-3 text-light">SEO</h5>
+            <p><b>ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione?</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+              a quote</button>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-left" data-aos-duration="1500" class="border p-3 text-center my-3 div2 rounded">
+            <img class="image-fluid" width="300px" style="height: 225px;" src="./images/Digital-Marketing.jpg" alt="">
+            <h5 class="py-3 text-light">Digital Marketing</h5>
+            <p><b> ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione?</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-outline-dak">Get a qoute</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-right" data-aos-duration="1500" class="border p-3 text-center my-3 div2 rounded">
+            <img class="image-fluid" width="300px" height="225px" src="./images/mobile_app_developent.jpg" alt="">
+            <h5 class="py-3 text-light">App Development</h5>
+            <p><b> ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione?</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-outline-dak">Get a qoute</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-left" data-aos-duration="1500" class="border p-3 text-center my-5 div2 rounded">
+            <img class="image-fluid" width="300px" height="225px" src="./images/IOT.jpeg" alt="">
+            <h5 class="py-3 text-light">IOT</h5>
+            <p><b> ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione?</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-outline-dak">Get a qoute</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div data-aos="flip-right" data-aos-duration="1500" class="border p-3 text-center my-5 div2 rounded">
+            <img class="image-fluid" width="300px" height="225px" src="./images/networking.jpg" alt="">
+            <h5 class="py-3 text-light">Networking</h5>
+            <p><b> ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione?</b></p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-outline-dak">Get a qoute</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Team  -->
+  <section class="container-fluid py-5 bg-dark me-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 data-aos="fade-up" data-aos-duration="900" class="display-6 text-light overflow-hidden">
+            <b>Meet Our Team</b>
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="1700" class="text-light">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Magnam, quasi!</p>
+          <img data-aos="fade-right" data-aos-duration="3000" src="./images/star (1).png" width="25px" alt="">
+          <img data-aos="fade-right" data-aos-duration="2700" src="./images/star (1).png" width="25px" alt="">
+          <img data-aos="fade-right" data-aos-duration="2400" src="./images/star (1).png" width="25px" alt="">
+          <img data-aos="fade-right" data-aos-duration="2100" src="./images/star (1).png" width="25px" alt="">
+          <img data-aos="fade-right" data-aos-duration="1800" src="./images/star (1).png" width="25px" alt="">
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="row gy-5">
+
+            <div class="col-12 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+              <div class="card">
+                <img src="./images/business1.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center ">
+                  <h4 class="overflow-hidden"><i>Mr.Dushante</i></h4>
+                  <p><i>Web Engineer</i></p>
+                  <div class="d-flex justify-content-center">
+                    <a href=""><img src="./images/facebook1.png" alt=""></a>&nbsp;&nbsp;
+                    <a href=""><img src="./images/twitter.png" alt=""></a>&nbsp;&nbsp;
+                    <a href=""><img src="./images/linkedin1.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="card">
+                <img src="./images/business5.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                  <h4 class="overflow-hidden"><i>Ms.Angela</i></h4>
+                  <p><i>Digital Marketer</i></p>
+                  <div class="d-flex justify-content-center">
+                    <a href=""><img src="./images/facebook1.png" alt=""></a> &nbsp;&nbsp;
+                    <a href=""><img src="./images/twitter.png" alt=""></a>&nbsp;&nbsp;
+                    <a href=""><img src="./images/linkedin1.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4" data-aos="zoom-in" data-aos-duration="3000">
+              <div class="card">
+                <img src="./images/business3.jpg" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                  <h4 class="overflow-hidden"><i>Mr.Jonathan</i></h4>
+                  <p><i>SEO Specialist</i></p>
+                  <div class="d-flex justify-content-center">
+                    <a href=""><img src="./images/facebook1.png" alt=""></a>&nbsp;&nbsp;
+                    <a href=""><img src="./images/twitter.png" alt=""></a>&nbsp;&nbsp;
+                    <a href=""><img src="./images/linkedin1.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="">
+
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Get a Qoute</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+
+
+
+            <div class="form-floating">
+              <input type="text" class="form-control mb-3" id="floatingName" placeholder="Your Name | Company Name"
+                required>
+              <label for="floatingName">Your Name | Company Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingPhone" placeholder="+9234-5678965-4" required>
+              <label for="floatingPhone">Phone</label>
+            </div>
+
+            <div class="mb-3">
+              <select required class="form-select" size="3" aria-label="size 3 select example">
+                <option value="0">Select your services</option>
+                <option value="WEB DESIGNING">WEB DESIGNING</option>
+                <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+                <option value="WEB RESEARCH">WEB RESEARCH</option>
+                <option value="WEB ANALYTICS">WEB ANALYTICS</option>
+                <option value="SEO">SEO</option>
+                <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                <option value="MOBILE APP DEVELOPMENT">MOBILE APP DEVELOPMENT</option>
+                <option value="IOT">IOT</option>
+                <option value="NETWORKING">Networking</option>
+
+              </select>
+            </div>
+            <div>
+              <textarea required name="" id="" cols="30" rows="3" class="form-control" placeholder="Details"></textarea>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- feedback section  -->
+
+
+  <section class="container-fluid bg-light py-4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="display-6 overflow-hidden"><b>Client Feedback</b></h2>
+        <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
+      </div>
+      <div class="col-12 text-center">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-12">
+        <blockquote class="blockquote text-center">
+          <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0"
+            class="rounded-circle mb-4" src="images/client.jpeg" height="100px" alt="">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <br>
+          <footer class="blockquote-footer" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ's  -->
+
+
+  <section id="faq" class="container-fluid py-3" style="background-color: rgb(5, 105, 105);">
+
+    <div class="row py-5">
+      <div class="col-12 text-center text-light">
+        <h2 class="display-6 overflow-hidden"><b>Frequently Asked Questions</b></h2>
+        <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
+      </div>
+
+      <div class="col-12 text-center">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+        <img src="images/star (1).png" width="25px" alt="star" class="img-fluid">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6  mb-md-3 ">
+        <div class="accordion " id="accordion_1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                aria-expanded="true" aria-controls="collapse_1">
+                Whay We Are Best?
+              </button>
+            </h2>
+
+            <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1"
+              data-bs-parent="#accordion_1">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                How We Build Website?
+              </button>
+            </h2>
+
+
+            <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2"
+              data-bs-parent="#accordion_1">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom
+                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                How long we take to build?
+              </button>
+
+              <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3"
+                data-bs-parent="#accordion_1">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall
+                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                  custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                  within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-lg-6 mb-md-5">
+        <div class="accordion" id="accordion_2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_4">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4"
+                aria-expanded="true" aria-controls="collapse_4">
+                This is a question?
+              </button>
+            </h2>
+            <div id="collapse_4" class="accordion-collapse collapse show" aria-labelledby="heading_4"
+              data-bs-parent="#accordion_2">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                This is a question?
+              </button>
+            </h2>
+            <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5"
+              data-bs-parent="#accordion_2">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+                This is a question?
+              </button>
+            </h2>
+            <div id="collapse_6" class="accordion-collapse collapse" aria-labelledby="heading_6"
+              data-bs-parent="#accordion_2">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- contact us section  -->
+
+
+  <section id="contact" class="bg-light py-3">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <h2 class="display-6 overflow-hidden"><b>Contact Us</b></h2>
+          <p class="">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Nisi, consequuntur!</p>
+        </div>
+        <div class="col-12 text-center">
+          <img src="images/star (1).png"width="25px" alt="star" class="w-10 w-lg-auto">
+          <img src="images/star (1).png"width="25px" alt="star" class="w-10 w-lg-auto">
+          <img src="./images/star (1).png"width="25px" alt="star" class="w-10 w-lg-auto">
+          <img src="images/star (1).png"width="25px" alt="star" class="w-10 w-lg-auto">
+          <img src="images/star (1).png"width="25px" alt="star" class="w-10 w-lg-auto">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-5 text-center overflow-hidden">
+          <img data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom"
+            class="img-fluid me-5 mb-3 " src="images/contact.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="">
+            <form action="">
+              <div class="form-floating">
+                <input required type="text" class="form-control rounded-0" id="floatingName"
+                  placeholder="Your Full Name">
+                <label for="floatingName">Your Full Name</label>
+              </div>
+              <div class="form-floating mt-3">
+                <input required type="email" class="form-control rounded-0" id="floatingInput"
+                  placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class=" mt-3">
+                <textarea required class="form-control rounded-0" placeholder="Leave a comment here"
+                  id="floatingTextarea" cols="30" rows="4"></textarea>
+              </div>
+              <div class="mt-3">
+                <button class="btn btn-primary w-100 rounded-0" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section  -->
+
+  <footer class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-12 text-center">
+          <a href="#top"><img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+              src="images/top.png" alt=""></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <form action="">
+            <div class="input-group mb-3">
+              <input required type="text" class="form-control rounded-1" placeholder="Your Email"
+                aria-label="Your Email" aria-describedby="button-addon2">
+              <button class="btn btn-outline-info" type="submit" id="button-addon2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row py-4 justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+          <a data-aos="fade-right" data-aos-duration="3000" href="https://www.facebook.com/syedzaday.syedibad"><img
+              src="./images/facebook.png" alt="facebook logo" width="30px " class="me-2"></a> &nbsp; &nbsp;
+          <a data-aos="fade-right" data-aos-duration="2100"
+            href="https://www.instagram.com/_syed.ibad3727/?fbclid=IwAR0jipfuC5Z3FhXjuAJ6zOVE9y_-hF5iz0kzI4Decj8aQh_Ayo4DCjMJ8WI"><img
+              src="./images/instagram.png" alt="facebook logo" width="30px" class="me-2"></a> &nbsp;&nbsp;
+          <a data-aos="fade-right" data-aos-duration="1400" href="https://www.linkedin.com/in/syed-ibad-542205261/"><img
+              src="./images/linkedin.png" alt="facebook logo" width="30px" class="me-2"></a>&nbsp;&nbsp;
+          <a data-aos="fade-right" data-aos-duration="700" href="https://github.com/SyedIbad123"><img src="./images/github.png"
+              alt="facebook logo" width="30px" class="me-2"></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <p class="text-center m-0 text-secondary">CopyRight &copy; Syed Ibad Ali</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
